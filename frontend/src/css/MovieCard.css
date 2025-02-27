@@ -107,6 +107,45 @@
   margin-top: auto;
 }
 
+.popularity-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.progress-fill.low {
+  background-color: cyan;
+}
+.progress-fill.medium {
+  background-color: green;
+}
+.progress-fill.high {
+  background-color: yellow;
+}
+.progress-fill.very-high {
+  background-color: orange;
+}
+.progress-fill.extreme {
+  background-color: red;
+}
+
 @media (max-width: 768px) {
   .movie-card {
     font-size: 0.9rem;
