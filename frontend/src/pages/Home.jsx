@@ -1,6 +1,7 @@
 import MovieCard from "../components/MovieCard";
 import { useEffect, useState } from "react";
 import { getPopularMovies, searchMovies } from "../services/api";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 import "../css/Home.css";
 
@@ -56,7 +57,7 @@ const Home = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button type="submit" className="search-button">
-          Search
+          <FaMagnifyingGlass />
         </button>
       </form>
 

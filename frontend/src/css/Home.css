@@ -1,12 +1,13 @@
 .home {
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
   box-sizing: border-box;
+  background-color: #1a1a1a;
 }
 
 .search-form {
   max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.5rem;
   display: flex;
   gap: 1rem;
   padding: 0 1rem;
@@ -15,27 +16,30 @@
 
 .search-input {
   flex: 1;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.2rem;
   border: none;
-  border-radius: 4px;
-  background-color: #333;
+  border-radius: 6px;
+  background-color: #2b2b2b;
   color: white;
   font-size: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .search-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #666;
+  box-shadow: 0 0 0 3px #555;
 }
 
 .search-button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.85rem 1.7rem;
   background-color: #e50914;
   color: white;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
   white-space: nowrap;
+  border: none;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -44,19 +48,19 @@
 
 @media (max-width: 639px) {
   .home {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 
   .search-form {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   width: 100%;
   box-sizing: border-box;
 }
