@@ -134,7 +134,7 @@
   background-color: cyan;
 }
 .progress-fill.medium {
-  background-color: green;
+  background-color: rgb(126, 128, 0);
 }
 .progress-fill.high {
   background-color: yellow;
